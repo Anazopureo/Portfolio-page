@@ -12,6 +12,10 @@
             to {transform: translateY(0px);  color: black;}
         }     
 
+        @keyframes fadeIn {
+            from {opacity: 0; scale: 50%;}
+            to{opacity: 1; scale:100%;}
+        }
     
         </style>
     </styles>
@@ -21,7 +25,7 @@
 
         <div class="h-[700px] flex justify-center items-center flex-col bg-[url('background.jpg')] bg-cover">
             <h1 class="text-7xl font-bold animate-[slideIn_2s_ease-in-out_forwards]">IyanuOluwa Olanrewaju</h1>
-            <p class="text-3xl font-marker">..MY INTERACTIVE WEBSITE</p>
+            <p class="text-3xl font-marker animate-[fadeIn_2s_ease_forwards]">..MY INTERACTIVE WEBSITE</p>
         </div>
 
         <div class="relative bg-white md:bg-cover ">
@@ -104,7 +108,7 @@
                 </div>
             </section>
 
-            <footer class="bg-blue-100 flex items-center justify-center p-4">
+            <footer class="bg-blue-100 flex items-center justify-center py-4 ">
                 Built by Hakki 2026. &copy; All right Reserved. 
             </footer>
 
